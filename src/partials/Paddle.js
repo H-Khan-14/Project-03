@@ -1,6 +1,5 @@
 export default class Paddle {
   constructor(board, width, height, isLeft, up, down) {
-    //     this.boardHeight = boardHeight;
     this.width = width;
     this.height = height;
     this.isLeft = isLeft;
@@ -11,7 +10,7 @@ export default class Paddle {
     }
     this.board = board;
     this.yPosition = board.height / 2 - height / 2;
-    this.speed = 10;
+    this.speed = 20;
     document.addEventListener('keydown', event => {
       switch (event.keyCode) {
         case up:
@@ -25,10 +24,6 @@ export default class Paddle {
       }
     });
   }
-  //     this.x = x;
-  //     this.y = y;
-  //     this.speed = 10;
-  //     this.score = 0;
 
   coordinates() {
     let leftX = this.xPosition;

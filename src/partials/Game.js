@@ -12,7 +12,7 @@ export default class Game {
     this.ball = new Ball(16, width, height);
     this.PaddleL = new Paddle(this.board, 16, 112, true, KEYS.a, KEYS.z);
     this.PaddleR = new Paddle(this.board, 16, 112, false, KEYS.up, KEYS.down);
-    this.scoreBoard = new ScoreBoard(256, 768, 0, 0);
+    this.scoreBoard = new ScoreBoard(256, 768, 0, 0, this.ball);
     // Other code goes here...
 
     this.pause = false;
@@ -33,11 +33,7 @@ export default class Game {
     }
     document.getElementById('game').innerHTML = '';
     document.getElementById('scoreBoard').innerHTML = '';
-    // let svg = document.createElementNS(SVG_NS, 'svg');
-    // svg.setAttributeNS(null, 'width', this.width);
-    // svg.setAttributeNS(null, 'height', this.height);
-    // svg.setAttributeNS(null, 'viewBox', `0 0 ${this.width} ${this.height}`);
-    // this.gameElement.appendChild(svg);
+
     this.board.render();
     this.ball.render(this.PaddleL, this.PaddleR);
     this.PaddleL.render();

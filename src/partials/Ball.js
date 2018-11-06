@@ -8,10 +8,6 @@ export default class Ball {
     this.boardHeight = boardHeight;
     this.direction = 1;
     this.reset();
-    // this.GameBoardheight=GameBoard.height;
-    // this.GameBoardwidth=GameBoard.width;
-    // this.PaddleLeft=PaddleLeft;
-    // this.PaddleRight=PaddleRight;
   }
 
   WallCollision() {
