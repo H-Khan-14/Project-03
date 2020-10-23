@@ -1,6 +1,6 @@
-# Pong Game
+# Pong
 
-A basic pong game using SVGs.
+A recreation of the classic Pong game using SVGs. Pong is a two-dimensional sports game that simulates table tennis. Players use controls to move the paddles vertically to hit a ball back and forth. The technologies and practices used consist of: HTML5, CSS3, JavaScript, JQuery, and GULP.
 
 ## Setup
 
